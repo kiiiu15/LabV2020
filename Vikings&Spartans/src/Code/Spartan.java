@@ -3,12 +3,14 @@ package Code;
 import Interfaces.IDrink;
 import Interfaces.IPee;
 
-public class Viking extends Human {
+public class Spartan extends Human {
 
 
-    public Viking(String name, Integer age, Integer weight, IDrinkVikingImp drinkeable, IPeeVikingImp peeable) {
+    public Spartan(String name, Integer age, Integer weight,  IDrinkSpartanImp drinkeable, IPeeSpartanImp peeable) {
         super(name, age, weight, drinkeable, peeable);
     }
+
+
 
     public void drink(){
         System.out.print(super.name + " el ");
@@ -22,7 +24,7 @@ public class Viking extends Human {
 
     @Override
     public String toString() {
-        return "Viking{" +
+        return "Spartan{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", weight=" + weight +
@@ -31,14 +33,13 @@ public class Viking extends Human {
                 '}';
     }
 
+
     @Override
     public boolean equals(Object o) {
-        if ( o != null && o instanceof Viking){
+        if (o != null && o instanceof Spartan)
             return super.equals(o);
-        } else {
+        else
             return false;
-        }
-
     }
 
     @Override
