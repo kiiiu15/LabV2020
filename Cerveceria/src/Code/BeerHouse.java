@@ -1,7 +1,9 @@
 package Code;
 
 /**
- * This class is meant to work as a shared buffer between BeerProducer and BeerConsumer
+ * This class is meant to work as a shared buffer between BeerProducer and BeerConsumer.
+ *
+ * The house capacity it's gonna ondicate to the producer thread how much beer it can produce.
  */
 public class BeerHouse {
 
@@ -67,7 +69,7 @@ public class BeerHouse {
      */
     public synchronized void  setBeer(Beer beer) {
 
-        while(!served){
+        while(served){
 
             try {
 
