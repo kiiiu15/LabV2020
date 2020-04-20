@@ -5,13 +5,37 @@ package Code;
  */
 public class BeerHouse {
 
-    Beer beer = null;
-    boolean served = false;
+
+    Beer beer ;
+    boolean served ;
+    Integer houseCapacity ;
+
+
+    public BeerHouse() {
+        this.houseCapacity = 100;
+        this.served = false;
+        this.beer = null;
+    }
+
+    public BeerHouse(Integer houseCapacity) {
+        this.houseCapacity = houseCapacity;
+        this.served = false;
+        this.beer = null;
+    }
+
+
+    public Integer getHouseCapacity() {
+
+        return houseCapacity;
+
+    }
 
     /**
      * this method retieves the beer and control that the consumer thread does not consume until a beer is served.
      * @return Beer served
      */
+
+
     public synchronized Beer getBeer() {
 
         while (!served){
@@ -63,4 +87,8 @@ public class BeerHouse {
 
         notifyAll();
     }
+
+
+
+
 }

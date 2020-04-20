@@ -3,12 +3,12 @@ package Code;
 public class Beer {
 
     public Beer() {
-
+        super();
     }
 
     public void  drink(){
 
-        System.out.println("Que rica cervesa");
+        System.out.println("Delicious Beer!");
 
     }
 }
