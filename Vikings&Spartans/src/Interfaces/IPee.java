@@ -2,6 +2,6 @@ package Interfaces;
 
 public interface IPee {
 
-    void pee();
+    void pee(String name);
 
 }

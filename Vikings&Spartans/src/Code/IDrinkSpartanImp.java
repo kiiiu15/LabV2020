@@ -9,7 +9,7 @@ public class IDrinkSpartanImp implements IDrink {
     }
 
     @Override
-    public void drink() {
-        System.out.println(" spartano a bebido una cerveza ");
+    public void drink(String name) {
+        Main.print(name +" el spartano a bebido una cerveza ");
     }
 }

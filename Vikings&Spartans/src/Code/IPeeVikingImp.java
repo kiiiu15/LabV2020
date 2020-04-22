@@ -9,7 +9,7 @@ public class IPeeVikingImp implements IPee {
     }
 
     @Override
-    public void pee() {
-        System.out.println(" vikingo se fue a orinar ");
+    public void pee(String name) {
+        Main.print(name + ", el vikingo se fue a orinar y ha quedado descalificado");
     }
 }

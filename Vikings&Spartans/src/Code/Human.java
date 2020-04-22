@@ -5,7 +5,7 @@ import Interfaces.IPee;
 
 import java.util.Objects;
 
-public class Human {
+public abstract class Human {
 
     String name;
     Integer age;
@@ -21,6 +21,11 @@ public class Human {
         this.drinkeable = drinkeable;
         this.peeable = peeable;
     }
+
+
+    public abstract void pee();
+
+    public abstract void drink();
 
     @Override
     public boolean equals(Object o) {
@@ -45,8 +50,6 @@ public class Human {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", weight=" + weight +
-                ", drinkeable=" + drinkeable +
-                ", peeable=" + peeable +
                 '}';
     }
 }

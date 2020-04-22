@@ -9,7 +9,8 @@ public class IDrinkVikingImp implements IDrink {
     }
 
     @Override
-    public void drink() {
-        System.out.println(" vikingo a bebido una cerveza ");
+    public void drink(String name) {
+
+        Main.print(name + " , el vikingo a bebido una cerveza ");
     }
 }

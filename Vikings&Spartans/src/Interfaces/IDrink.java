@@ -2,6 +2,6 @@ package Interfaces;
 
 public interface IDrink {
 
-    void drink();
+    void drink(String name);
 
 }

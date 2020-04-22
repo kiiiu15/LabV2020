@@ -13,13 +13,12 @@ public class Spartan extends Human {
 
 
     public void drink(){
-        System.out.print(super.name + " el ");
-        super.drinkeable.drink();
+        super.drinkeable.drink(super.name);
     }
 
     public void pee(){
-        System.out.print(super.name + " el ");
-        super.peeable.pee();
+
+        super.peeable.pee(super.name);
     }
 
     @Override
@@ -28,8 +27,6 @@ public class Spartan extends Human {
                 "name='" + name + '\'' +
                 ", age=" + age +
                 ", weight=" + weight +
-                ", drinkeable=" + drinkeable +
-                ", peeable=" + peeable +
                 '}';
     }
 
